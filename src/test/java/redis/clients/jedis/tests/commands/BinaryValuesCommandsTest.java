@@ -24,6 +24,7 @@ public class BinaryValuesCommandsTest extends JedisCommandTestBase {
         }
 
         binaryValue = sb.toString().getBytes();
+        System.out.println("长度 :"+binaryValue.length);
     }
 
     @Test

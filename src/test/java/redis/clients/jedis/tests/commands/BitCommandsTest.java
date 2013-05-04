@@ -3,6 +3,7 @@ package redis.clients.jedis.tests.commands;
 import org.junit.Test;
 
 import redis.clients.jedis.BitOP;
+import redis.clients.util.SafeEncoder;
 
 public class BitCommandsTest extends JedisCommandTestBase {
     @Test
@@ -36,18 +37,26 @@ public class BitCommandsTest extends JedisCommandTestBase {
     public void bitCount() {
         jedis.del("foo");
 
-        jedis.setbit("foo", 16, true);
-        jedis.setbit("foo", 24, true);
-        jedis.setbit("foo", 40, true);
-        jedis.setbit("foo", 56, true);
+        jedis.setbit("foo", 0, true);
+//        jedis.setbit("foo", 1, true);
+//        jedis.setbit("foo", 2, true);
+//        jedis.setbit("foo", 3, true);
+//        jedis.setbit("foo", 4, true);
+//        jedis.setbit("foo", 5, true);
+//        jedis.setbit("foo", 6, true);
+//        jedis.setbit("foo", 7, true);
+//        jedis.setbit("foo", 40, true);
+//        jedis.setbit("foo", 56, true);
 
-        long c4 = jedis.bitcount("foo");
-        assertEquals(4, c4);
+//        long c4 = jedis.bitcount("foo");
+//        System.out.println(c4);
+//        assertEquals(4, c4);
+//
+//        long c3 = jedis.bitcount("foo", 2L, 5L);
+//        assertEquals(3, c3);
 
-        long c3 = jedis.bitcount("foo", 2L, 5L);
-        assertEquals(3, c3);
-
-        jedis.del("foo");
+        byte[] bs = jedis.get(SafeEncoder.encode("foo"));
+        System.out.println(bs[0]);
     }
 
     @Test

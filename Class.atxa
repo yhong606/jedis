@@ -1,0 +1,559 @@
+<,yhong606@sohu.com,yhong606@sohu.com,yhong606@sohu.com,yhong606@sohu.com,yhong606@sohu.com,yhong606@sohu.com> <http://www.architexa.com/rdf/core#creator> "true" .
+
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#Class.atxa> a atxa-core:reloFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+atxa-core:docRoot atxa-core:browseModel "com.architexa.diagrams.relo.jdt/com.architexa.diagrams.relo.jdt.browse.ClassStrucBrowseModel" ;
+	atxa-core:contains _:node17ooes1qtx1 .
+
+_:node17ooes1qtx1 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis> ;
+	atxa-core:posX "932" ;
+	atxa-core:posY "125" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Protocol> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Jedis> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$PipelineBase> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Response> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$MultiKeyPipelineBase> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Queable> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline> .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx2 .
+
+_:node17ooes1qtx2 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Protocol> ;
+	atxa-core:posX "2470" ;
+	atxa-core:posY "309" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Protocol> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Protocol.sendCommand(RedisOutputStream,Command,byte[][],)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Protocol.sendCommand(RedisOutputStream,byte[],byte[][],)> .
+
+_:node17ooes1qtx2 atxa-core:contains _:node17ooes1qtx3 .
+
+_:node17ooes1qtx3 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Protocol.sendCommand(RedisOutputStream,Command,byte[][],)> ;
+	atxa-core:posX "2471" ;
+	atxa-core:posY "328" .
+
+_:node17ooes1qtx4 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx3 ;
+	rdf:object _:node17ooes1qtx5 .
+
+_:node17ooes1qtx2 atxa-core:contains _:node17ooes1qtx5 .
+
+_:node17ooes1qtx5 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Protocol.sendCommand(RedisOutputStream,byte[],byte[][],)> ;
+	atxa-core:posX "2471" ;
+	atxa-core:posY "345" .
+
+_:node17ooes1qtx6 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx5 ;
+	rdf:object _:node17ooes1qtx7 .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx8 .
+
+_:node17ooes1qtx8 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection> ;
+	atxa-core:posX "1237" ;
+	atxa-core:posY "151" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.socket> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.host> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.outputStream> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.pipelinedCommands> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.port> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.connect()> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.sendCommand(Command,byte[][],)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.sendCommand(Command,String[],)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.sendCommand(Command,)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.timeout> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.inputStream> .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx9 .
+
+_:node17ooes1qtx9 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.socket> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "170" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx10 .
+
+_:node17ooes1qtx10 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.host> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "187" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx11 .
+
+_:node17ooes1qtx11 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.outputStream> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "204" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx12 .
+
+_:node17ooes1qtx12 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.pipelinedCommands> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "221" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx13 .
+
+_:node17ooes1qtx13 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.port> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "238" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx14 .
+
+_:node17ooes1qtx14 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.connect()> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "289" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx15 .
+
+_:node17ooes1qtx15 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.sendCommand(Command,byte[][],)> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "306" .
+
+_:node17ooes1qtx16 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx15 ;
+	rdf:object _:node17ooes1qtx14 .
+
+_:node17ooes1qtx17 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx15 ;
+	rdf:object _:node17ooes1qtx3 .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx18 .
+
+_:node17ooes1qtx18 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.sendCommand(Command,String[],)> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "323" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx19 .
+
+_:node17ooes1qtx19 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.sendCommand(Command,)> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "340" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx20 .
+
+_:node17ooes1qtx20 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.timeout> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "255" .
+
+_:node17ooes1qtx8 atxa-core:contains _:node17ooes1qtx21 .
+
+_:node17ooes1qtx21 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Connection.inputStream> ;
+	atxa-core:posX "1238" ;
+	atxa-core:posY "272" .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx22 .
+
+_:node17ooes1qtx22 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Jedis> ;
+	atxa-core:posX "938" ;
+	atxa-core:posY "709" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Jedis> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Jedis.set(String,String,)> .
+
+_:node17ooes1qtx23 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17ooes1qtx22 ;
+	rdf:object _:node17ooes1qtx24 ;
+	atxa-core:bendpoint _:node17ooamn8jx4165 .
+
+_:node17ooamn8jx4165 atxa-core:bpLocation "1057,684" ;
+	atxa-core:bpIndex "0" .
+
+_:node17ooes1qtx23 atxa-core:bendpoint _:node17ooamn8jx4166 .
+
+_:node17ooamn8jx4166 atxa-core:bpLocation "1077,684" ;
+	atxa-core:bpIndex "1" .
+
+_:node17ooes1qtx22 atxa-core:contains _:node17ooes1qtx27 .
+
+_:node17ooes1qtx27 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Jedis.set(String,String,)> ;
+	atxa-core:posX "939" ;
+	atxa-core:posY "728" .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx28 .
+
+_:node17ooes1qtx28 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client> ;
+	atxa-core:posX "1218" ;
+	atxa-core:posY "596" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client.set(String,String,)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client.Client(String,int,)> .
+
+_:node17ooes1qtx29 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17ooes1qtx28 ;
+	rdf:object _:node17ooes1qtx30 ;
+	atxa-core:bendpoint _:node17ooamn8jx4167 .
+
+_:node17ooamn8jx4167 atxa-core:bpLocation "1306,486" ;
+	atxa-core:bpIndex "0" .
+
+_:node17ooes1qtx29 atxa-core:bendpoint _:node17ooamn8jx4168 .
+
+_:node17ooamn8jx4168 atxa-core:bpLocation "1097,486" ;
+	atxa-core:bpIndex "1" .
+
+_:node17ooes1qtx28 atxa-core:contains _:node17ooes1qtx33 .
+
+_:node17ooes1qtx33 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client.set(String,String,)> ;
+	atxa-core:posX "1219" ;
+	atxa-core:posY "615" .
+
+_:node17ooes1qtx28 atxa-core:contains _:node17ooes1qtx34 .
+
+_:node17ooes1qtx34 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client.Client(String,int,)> ;
+	atxa-core:posX "1219" ;
+	atxa-core:posY "632" .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx35 .
+
+_:node17ooes1qtx35 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$PipelineBase> ;
+	atxa-core:posX "1778" ;
+	atxa-core:posY "565" .
+
+_:node17ooes1qtx36 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17ooes1qtx35 ;
+	rdf:object _:node17ooes1qtx37 ;
+	atxa-core:bendpoint _:node17ooamn8jx4169 .
+
+_:node17ooamn8jx4169 atxa-core:bpLocation "1837,548" ;
+	atxa-core:bpIndex "0" .
+
+_:node17ooes1qtx36 atxa-core:bendpoint _:node17ooamn8jx4170 .
+
+_:node17ooamn8jx4170 atxa-core:bpLocation "1984,548" ;
+	atxa-core:bpIndex "1" .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx42 .
+
+_:node17ooes1qtx42 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Response> ;
+	atxa-core:posX "2206" ;
+	atxa-core:posY "499" .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx51 .
+
+_:node17ooes1qtx51 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$MultiKeyPipelineBase> ;
+	atxa-core:posX "1672" ;
+	atxa-core:posY "645" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$MultiKeyPipelineBase> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$MultiKeyPipelineBase.client> .
+
+_:node17ooes1qtx52 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17ooes1qtx51 ;
+	rdf:object _:node17ooes1qtx35 ;
+	atxa-core:bendpoint _:node17ooamn8jx4171 .
+
+_:node17ooamn8jx4171 atxa-core:bpLocation "1783,622" ;
+	atxa-core:bpIndex "0" .
+
+_:node17ooes1qtx52 atxa-core:bendpoint _:node17ooamn8jx4172 .
+
+_:node17ooamn8jx4172 atxa-core:bpLocation "1837,622" ;
+	atxa-core:bpIndex "1" .
+
+_:node17ooes1qtx51 atxa-core:contains _:node17ooes1qtx55 .
+
+_:node17ooes1qtx55 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$MultiKeyPipelineBase.client> ;
+	atxa-core:posX "1673" ;
+	atxa-core:posY "664" .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx30 .
+
+_:node17ooes1qtx30 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient> ;
+	atxa-core:posX "1010" ;
+	atxa-core:posY "412" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient.set(byte[],byte[],)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient.multi()> .
+
+_:node17ooes1qtx56 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17ooes1qtx30 ;
+	rdf:object _:node17ooes1qtx8 ;
+	atxa-core:bendpoint _:node17ooamn8jx4173 .
+
+_:node17ooamn8jx4173 atxa-core:bpLocation "1097,378" ;
+	atxa-core:bpIndex "0" .
+
+_:node17ooes1qtx56 atxa-core:bendpoint _:node17ooamn8jx4174 .
+
+_:node17ooamn8jx4174 atxa-core:bpLocation "1448,378" ;
+	atxa-core:bpIndex "1" .
+
+_:node17ooes1qtx30 atxa-core:contains _:node17ooes1qtx59 .
+
+_:node17ooes1qtx59 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient.set(byte[],byte[],)> ;
+	atxa-core:posX "1011" ;
+	atxa-core:posY "431" .
+
+_:node17ooes1qtx60 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx59 ;
+	rdf:object _:node17ooes1qtx15 .
+
+_:node17ooes1qtx30 atxa-core:contains _:node17ooes1qtx61 .
+
+_:node17ooes1qtx61 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient.multi()> ;
+	atxa-core:posX "1011" ;
+	atxa-core:posY "448" .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx37 .
+
+_:node17ooes1qtx37 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Queable> ;
+	atxa-core:posX "1815" ;
+	atxa-core:posY "474" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Queable> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Queable.pipelinedResponses> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Queable.getResponse(Builder,)> .
+
+_:node17ooes1qtx37 atxa-core:contains _:node17ooes1qtx40 .
+
+_:node17ooes1qtx40 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Queable.pipelinedResponses> ;
+	atxa-core:posX "1816" ;
+	atxa-core:posY "493" .
+
+_:node17ooes1qtx37 atxa-core:contains _:node17ooes1qtx41 .
+
+_:node17ooes1qtx41 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Queable.getResponse(Builder,)> ;
+	atxa-core:posX "1816" ;
+	atxa-core:posY "510" .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx24 .
+
+_:node17ooes1qtx24 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis> ;
+	atxa-core:posX "946" ;
+	atxa-core:posY "593" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.client> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.BinaryJedis(String,int,int,)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.pipelined()> .
+
+_:node17ooes1qtx24 atxa-core:contains _:node17ooes1qtx43 .
+
+_:node17ooes1qtx43 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.client> ;
+	atxa-core:posX "947" ;
+	atxa-core:posY "612" .
+
+_:node17ooes1qtx24 atxa-core:contains _:node17ooes1qtx44 .
+
+_:node17ooes1qtx44 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.BinaryJedis(String,int,int,)> ;
+	atxa-core:posX "947" ;
+	atxa-core:posY "629" .
+
+_:node17ooes1qtx45 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx44 ;
+	rdf:object _:node17ooes1qtx34 .
+
+_:node17ooes1qtx24 atxa-core:contains _:node17ooes1qtx46 .
+
+_:node17ooes1qtx46 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.pipelined()> ;
+	atxa-core:posX "947" ;
+	atxa-core:posY "646" .
+
+_:node17ooes1qtx47 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx46 ;
+	rdf:object _:node17ooes1qtx48 .
+
+_:node17ooes1qtx49 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx46 ;
+	rdf:object _:node17ooes1qtx50 .
+
+_:node17ooes1qtx1 atxa-core:contains _:node17ooes1qtx62 .
+
+_:node17ooes1qtx62 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline> ;
+	atxa-core:posX "1377" ;
+	atxa-core:posY "730" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.Pipeline()> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.setClient(Client,)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.multi()> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.getResponse(Builder,)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.currentMulti> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder> .
+
+_:node17ooes1qtx63 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17ooes1qtx62 ;
+	rdf:object _:node17ooes1qtx51 ;
+	atxa-core:bendpoint _:node17ooamn8jx4175 .
+
+_:node17ooamn8jx4175 atxa-core:bpLocation "1575,702" ;
+	atxa-core:bpIndex "0" .
+
+_:node17ooes1qtx63 atxa-core:bendpoint _:node17ooamn8jx4176 .
+
+_:node17ooamn8jx4176 atxa-core:bpLocation "1783,702" ;
+	atxa-core:bpIndex "1" .
+
+_:node17ooes1qtx62 atxa-core:contains _:node17ooes1qtx48 .
+
+_:node17ooes1qtx48 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.Pipeline()> ;
+	atxa-core:posX "1378" ;
+	atxa-core:posY "766" .
+
+_:node17ooes1qtx62 atxa-core:contains _:node17ooes1qtx50 .
+
+_:node17ooes1qtx50 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.setClient(Client,)> ;
+	atxa-core:posX "1378" ;
+	atxa-core:posY "783" .
+
+_:node17ooes1qtx62 atxa-core:contains _:node17ooes1qtx66 .
+
+_:node17ooes1qtx66 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.multi()> ;
+	atxa-core:posX "1378" ;
+	atxa-core:posY "800" .
+
+_:node17ooes1qtx67 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx66 ;
+	rdf:object _:node17ooes1qtx61 .
+
+_:node17ooes1qtx68 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx66 ;
+	rdf:object _:node17ooes1qtx69 .
+
+_:node17ooes1qtx70 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooes1qtx66 ;
+	rdf:object _:node17ooes1qtx71 .
+
+_:node17ooes1qtx62 atxa-core:contains _:node17ooes1qtx69 .
+
+_:node17ooes1qtx69 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.getResponse(Builder,)> ;
+	atxa-core:posX "1378" ;
+	atxa-core:posY "817" .
+
+_:node17ooes1qtx62 atxa-core:contains _:node17ooes1qtx72 .
+
+_:node17ooes1qtx72 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.currentMulti> ;
+	atxa-core:posX "1378" ;
+	atxa-core:posY "749" .
+
+_:node17ooes1qtx62 atxa-core:contains _:node17ooes1qtx73 .
+
+_:node17ooes1qtx73 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder> ;
+	atxa-core:posX "1378" ;
+	atxa-core:posY "834" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder.MultiResponseBuilder(Pipeline,MultiResponseBuilder,)> .
+
+_:node17ooes1qtx73 atxa-core:contains _:node17ooes1qtx71 .
+
+_:node17ooes1qtx71 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder.MultiResponseBuilder(Pipeline,MultiResponseBuilder,)> ;
+	atxa-core:posX "1379" ;
+	atxa-core:posY "853" .
+
+atxa-core:docRoot atxa-core:contains _:node17ooes1qtx74 .
+
+_:node17ooes1qtx74 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util> ;
+	atxa-core:posX "2899" ;
+	atxa-core:posY "315" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream> .
+
+_:node17ooes1qtx74 atxa-core:contains _:node17ooes1qtx75 .
+
+_:node17ooes1qtx75 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream> ;
+	atxa-core:posX "2905" ;
+	atxa-core:posY "341" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream.RedisOutputStream(OutputStream,int,)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream.write(byte[],)> , <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream.buf> .
+
+_:node17ooes1qtx76 a atxa-core:link ;
+	atxa-core:model atxa-jdt:inherits ;
+	rdf:subject _:node17ooes1qtx75 ;
+	rdf:object _:node17ooes1qtx77 ;
+	atxa-core:bendpoint _:node17ooamn8jx4177 .
+
+_:node17ooamn8jx4177 atxa-core:bpLocation "3054,300" ;
+	atxa-core:bpIndex "0" .
+
+_:node17ooes1qtx75 atxa-core:contains _:node17ooes1qtx79 .
+
+_:node17ooes1qtx79 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream.RedisOutputStream(OutputStream,int,)> ;
+	atxa-core:posX "2906" ;
+	atxa-core:posY "377" .
+
+_:node17ooes1qtx75 atxa-core:contains _:node17ooes1qtx7 .
+
+_:node17ooes1qtx7 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream.write(byte[],)> ;
+	atxa-core:posX "2906" ;
+	atxa-core:posY "394" .
+
+_:node17ooes1qtx75 atxa-core:contains _:node17ooes1qtx80 .
+
+_:node17ooes1qtx80 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.util$RedisOutputStream.buf> ;
+	atxa-core:posX "2906" ;
+	atxa-core:posY "360" .
+
+atxa-core:docRoot atxa-core:contains _:node17ooes1qtx81 .
+
+_:node17ooes1qtx81 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#java.io> ;
+	atxa-core:posX "2969" ;
+	atxa-core:posY "217" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#java.io> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#java.io$FilterOutputStream> .
+
+_:node17ooes1qtx81 atxa-core:contains _:node17ooes1qtx77 .
+
+_:node17ooes1qtx77 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#java.io$FilterOutputStream> ;
+	atxa-core:posX "2975" ;
+	atxa-core:posY "243" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#java.io$FilterOutputStream> atxa-core:contains <http://www.architexa.com/rdf/jdt-wkspc#java.io$FilterOutputStream.out> .
+
+_:node17ooes1qtx77 atxa-core:contains _:node17ooes1qtx82 .
+
+_:node17ooes1qtx82 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#java.io$FilterOutputStream.out> ;
+	atxa-core:posX "2976" ;
+	atxa-core:posY "262" .
+
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#Class.atxa> a atxa-core:reloFile ;
+	atxa-core:contains _:node17ooes1qtx3 , _:node17ooes1qtx5 , _:node17ooes1qtx2 , _:node17ooes1qtx9 , _:node17ooes1qtx10 , _:node17ooes1qtx11 , _:node17ooes1qtx12 , _:node17ooes1qtx13 , _:node17ooes1qtx14 , _:node17ooes1qtx15 , _:node17ooes1qtx18 , _:node17ooes1qtx19 , _:node17ooes1qtx20 , _:node17ooes1qtx21 , _:node17ooes1qtx8 , _:node17ooes1qtx27 , _:node17ooes1qtx22 , _:node17ooes1qtx33 , _:node17ooes1qtx34 , _:node17ooes1qtx28 , _:node17ooes1qtx35 , _:node17ooes1qtx42 , _:node17ooes1qtx55 , _:node17ooes1qtx51 , _:node17ooes1qtx59 , _:node17ooes1qtx61 , _:node17ooes1qtx30 , _:node17ooes1qtx40 , _:node17ooes1qtx41 , _:node17ooes1qtx37 , _:node17ooes1qtx43 , _:node17ooes1qtx44 , _:node17ooes1qtx46 , _:node17ooes1qtx24 , _:node17ooes1qtx48 , _:node17ooes1qtx50 , _:node17ooes1qtx66 , _:node17ooes1qtx69 , _:node17ooes1qtx72 , _:node17ooes1qtx71 , _:node17ooes1qtx73 , _:node17ooes1qtx62 , _:node17ooes1qtx1 , _:node17ooes1qtx79 , _:node17ooes1qtx7 , _:node17ooes1qtx80 , _:node17ooes1qtx75 , _:node17ooes1qtx74 , _:node17ooes1qtx82 , _:node17ooes1qtx77 , _:node17ooes1qtx81 , atxa-core:docRoot , _:node17ooes1qtx3 , _:node17ooes1qtx5 , _:node17ooes1qtx2 , _:node17ooes1qtx9 , _:node17ooes1qtx10 , _:node17ooes1qtx11 , _:node17ooes1qtx12 , _:node17ooes1qtx13 , _:node17ooes1qtx14 , _:node17ooes1qtx15 , _:node17ooes1qtx18 , _:node17ooes1qtx19 , _:node17ooes1qtx20 , _:node17ooes1qtx21 , _:node17ooes1qtx8 , _:node17ooes1qtx27 , _:node17ooes1qtx22 , _:node17ooes1qtx33 , _:node17ooes1qtx34 , _:node17ooes1qtx28 , _:node17ooes1qtx35 , _:node17ooes1qtx42 , _:node17ooes1qtx55 , _:node17ooes1qtx51 , _:node17ooes1qtx59 , _:node17ooes1qtx61 , _:node17ooes1qtx30 , _:node17ooes1qtx40 , _:node17ooes1qtx41 , _:node17ooes1qtx37 , _:node17ooes1qtx43 , _:node17ooes1qtx44 , _:node17ooes1qtx46 , _:node17ooes1qtx24 , _:node17ooes1qtx48 , _:node17ooes1qtx50 , _:node17ooes1qtx66 , _:node17ooes1qtx69 , _:node17ooes1qtx72 , _:node17ooes1qtx71 , _:node17ooes1qtx73 , _:node17ooes1qtx62 , _:node17ooes1qtx1 , _:node17ooes1qtx79 , _:node17ooes1qtx7 , _:node17ooes1qtx80 , _:node17ooes1qtx75 , _:node17ooes1qtx74 , _:node17ooes1qtx82 , _:node17ooes1qtx77 , _:node17ooes1qtx81 , atxa-core:docRoot , _:node17ooes1qtx4 , _:node17ooes1qtx6 , _:node17ooes1qtx16 , _:node17ooes1qtx17 , _:node17ooes1qtx23 , _:node17ooes1qtx29 , _:node17ooes1qtx36 , _:node17ooes1qtx52 , _:node17ooes1qtx56 , _:node17ooes1qtx60 , _:node17ooes1qtx45 , _:node17ooes1qtx47 , _:node17ooes1qtx49 , _:node17ooes1qtx63 , _:node17ooes1qtx67 , _:node17ooes1qtx68 , _:node17ooes1qtx70 , _:node17ooes1qtx76 , _:node17ooes1qtx4 , _:node17ooes1qtx6 , _:node17ooes1qtx16 , _:node17ooes1qtx17 , _:node17ooes1qtx23 , _:node17ooes1qtx29 , _:node17ooes1qtx36 , _:node17ooes1qtx52 , _:node17ooes1qtx56 , _:node17ooes1qtx60 , _:node17ooes1qtx45 , _:node17ooes1qtx47 , _:node17ooes1qtx49 , _:node17ooes1qtx63 , _:node17ooes1qtx67 , _:node17ooes1qtx68 , _:node17ooes1qtx70 , _:node17ooes1qtx76 .
+

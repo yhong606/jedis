@@ -17,7 +17,7 @@ public class PipeliningTest extends Assert {
 
     @Before
     public void setUp() throws Exception {
-        jedis = new Jedis(hnp.host, hnp.port, 500);
+        jedis = new Jedis(hnp.host, hnp.port, 5000);
         jedis.connect();
         jedis.auth("foobared");
         jedis.flushAll();
@@ -216,17 +216,23 @@ public class PipeliningTest extends Assert {
 
     @Test
     public void multi(){
-        Pipeline p = jedis.pipelined();
-        p.multi();
-        Response<Long> r1 = p.hincrBy("a", "f1", -1);
+        Pipeline p = jedis.pipelined();//准备一个Pipeline 同时把client赋给Pipeline
+        p.multi();//1.通过client发multi命令;2.读一个response(准备);3.新建MultiResponseBuilder设置到p.currentMulti,MultiResponseBuilder包装了多个response，在build的时候分拆到不同的response中;;一个response代表一个返回的命令行，有可能会包含多条数据，由一个builder构建，用来解析将来的返回信息
+        for (int i = 0; i < 1000000; i++) {
+        	if(i%2==0){
+        		p.hincrBy("a", "f1", 1);
+        	}else{
+        		p.hincrBy("a", "f1", -1);
+        	}
+		}
+        Response<Long> r1 = p.hincrBy("a", "f1", -1);//1.让client发hincrBy命令2.新建一个response(Long,准备)3.把response加入到待接收返回队列里
         Response<Long> r2 = p.hincrBy("a", "f1", -2);
-        Response<List<Object>> r3 = p.exec();
-        List<Object> result = p.syncAndReturnAll();
-        
+        Response<List<Object>> r3 = p.exec();//1.client发exec命令，同时设置isInMulti=false;2.使用p.currentMulti中的MultiResponseBuilder读一个response（准备）;3.清空currentMulti
+        List<Object> result = p.syncAndReturnAll();//1.发送返回所有的数据；2.返回的数据填充Queable.pipelinedResponses并返回
         assertEquals(new Long(-1), r1.get());
         assertEquals(new Long(-3), r2.get());
         
-        assertEquals(4, result.size());
+        assertEquals(4, result.size()); 
         
         assertEquals("OK", result.get(0));
         assertEquals("QUEUED", result.get(1));

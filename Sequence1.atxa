@@ -1,0 +1,210 @@
+<,yhong606@sohu.com,yhong606@sohu.com,yhong606@sohu.com,yhong606@sohu.com> <http://www.architexa.com/rdf/core#creator> "true" .
+
+@prefix atxa-rse-eclipse: <http://www.architexa.com/rdf/rse-eclipse#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix atxa-jdt-wkspc: <http://www.architexa.com/rdf/jdt-wkspc#> .
+@prefix atxa-core: <http://www.architexa.com/rdf/core#> .
+@prefix atxa: <http://www.architexa.com/rdf/> .
+@prefix atxa-jdt: <http://www.architexa.com/rdf/jdt#> .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence1.atxa> a atxa-core:chronoFile .
+
+atxa:DetailNode atxa-core:detailLevel "0" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence1.atxa> atxa-core:contains _:node17ooa9ap6x1 .
+
+_:node17ooa9ap6x1 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis.tests$PipeliningTest> ;
+	atxa-jdt:index "0" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17ooa9ap6x2 .
+
+_:node17ooa9ap6x2 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis.tests$PipeliningTest.multi()> ;
+	atxa-jdt:index "0" ;
+	atxa-core:contains _:node17ooa9ap6x3 .
+
+_:node17ooa9ap6x3 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.pipelined()> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.pipelined()> atxa-core:link _:node17ooa9ap6x4 .
+
+_:node17onlqd1bx2636 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooa9ap6x3 ;
+	rdf:object _:node17ooa9ap6x4 ;
+	atxa-core:name "pipelined()" .
+
+_:node17ooa9ap6x2 atxa-core:contains _:node17ooa9ap6x6 .
+
+_:node17ooa9ap6x6 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.multi()> ;
+	atxa-jdt:index "1" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.multi()> atxa-core:link _:node17ooa9ap6x7 .
+
+_:node17onlqd1bx2637 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17ooa9ap6x6 ;
+	rdf:object _:node17ooa9ap6x7 ;
+	atxa-core:name "multi()" .
+
+_:node17ooa9ap6x2 atxa-core:contains _:node17onlqd1bx2638 .
+
+_:node17onlqd1bx2638 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$PipelineBase.hincrBy(String,String,long,)> ;
+	atxa-jdt:index "2" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$PipelineBase.hincrBy(String,String,long,)> atxa-core:link _:node17onlqd1bx2639 .
+
+_:node17onlqd1bx2640 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17onlqd1bx2638 ;
+	rdf:object _:node17onlqd1bx2639 ;
+	atxa-core:name "hincrBy(\"a\", \"f1\", -1)" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence1.atxa> atxa-core:contains _:node17ooa9ap6x9 .
+
+_:node17ooa9ap6x9 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Jedis> ;
+	atxa-jdt:index "1" ;
+	atxa-core:instanceName "jedis" ;
+	atxa-core:contains _:node17ooa9ap6x4 .
+
+_:node17ooa9ap6x4 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryJedis.pipelined()> ;
+	atxa-jdt:index "0" .
+
+_:node17onlqd1bx2641 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17ooa9ap6x4 ;
+	rdf:object _:node17ooa9ap6x3 ;
+	atxa-core:name "Pipeline" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence1.atxa> atxa-core:contains _:node17ooa9ap6x11 .
+
+_:node17ooa9ap6x11 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline> ;
+	atxa-jdt:index "2" ;
+	atxa-core:instanceName "p" ;
+	atxa-core:contains _:node17ooa9ap6x7 .
+
+_:node17ooa9ap6x7 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline.multi()> ;
+	atxa-jdt:index "0" .
+
+_:node17onlqd1bx2642 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17ooa9ap6x7 ;
+	rdf:object _:node17ooa9ap6x6 ;
+	atxa-core:name "Response<String>" .
+
+_:node17ooa9ap6x7 atxa-core:contains _:node17onlqd1bx2643 .
+
+_:node17onlqd1bx2643 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient.multi()> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient.multi()> atxa-core:link _:node17onlqd1bx2644 .
+
+_:node17onlqd1bx2645 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17onlqd1bx2643 ;
+	rdf:object _:node17onlqd1bx2644 ;
+	atxa-core:name "multi()" .
+
+_:node17ooa9ap6x7 atxa-core:contains _:node17onlqd1bx2646 .
+
+_:node17onlqd1bx2646 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder.MultiResponseBuilder(Pipeline,)> ;
+	atxa-jdt:index "1" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder.MultiResponseBuilder(Pipeline,)> atxa-core:link _:node17onlqd1bx2647 .
+
+_:node17onlqd1bx2648 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17onlqd1bx2646 ;
+	rdf:object _:node17onlqd1bx2647 ;
+	atxa-core:name "MultiResponseBuilder()" .
+
+_:node17ooa9ap6x11 atxa-core:contains _:node17onlqd1bx2639 .
+
+_:node17onlqd1bx2639 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$PipelineBase.hincrBy(String,String,long,)> ;
+	atxa-jdt:index "1" .
+
+_:node17onlqd1bx2649 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17onlqd1bx2639 ;
+	rdf:object _:node17onlqd1bx2638 ;
+	atxa-core:name "Response<Long>" .
+
+_:node17onlqd1bx2639 atxa-core:contains _:node17onlqd1bx2650 .
+
+_:node17onlqd1bx2650 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client.hincrBy(String,String,long,)> ;
+	atxa-jdt:index "0" .
+
+<http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client.hincrBy(String,String,long,)> atxa-core:link _:node17onlqd1bx2651 .
+
+_:node17onlqd1bx2652 a atxa-core:link ;
+	atxa-core:model atxa-jdt:calls ;
+	rdf:subject _:node17onlqd1bx2650 ;
+	rdf:object _:node17onlqd1bx2651 ;
+	atxa-core:name "getClient(key).hincrBy(key, field, value)" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence1.atxa> atxa-core:contains _:node17onlqd1bx2635 .
+
+_:node17onlqd1bx2635 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client> ;
+	atxa-jdt:index "3" ;
+	atxa-core:instanceName "client" ;
+	atxa-core:contains _:node17onlqd1bx2644 .
+
+_:node17onlqd1bx2644 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$BinaryClient.multi()> ;
+	atxa-jdt:index "0" .
+
+_:node17onlqd1bx2653 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17onlqd1bx2644 ;
+	rdf:object _:node17onlqd1bx2643 ;
+	atxa-core:name "void" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence1.atxa> atxa-core:contains _:node17onlqd1bx2654 .
+
+_:node17onlqd1bx2654 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder> ;
+	atxa-jdt:index "4" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17onlqd1bx2647 .
+
+_:node17onlqd1bx2647 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Pipeline$MultiResponseBuilder.MultiResponseBuilder(Pipeline,)> ;
+	atxa-jdt:index "0" .
+
+_:node17onlqd1bx2655 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17onlqd1bx2647 ;
+	rdf:object _:node17onlqd1bx2646 ;
+	atxa-core:name "MultiResponseBuilder" .
+
+<http://www.architexa.com/rdf/rse-eclipse#Sequence1.atxa> atxa-core:contains _:node17onlqd1bx2656 .
+
+_:node17onlqd1bx2656 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client> ;
+	atxa-jdt:index "5" ;
+	atxa-core:instanceName "" ;
+	atxa-core:contains _:node17onlqd1bx2651 .
+
+_:node17onlqd1bx2651 a atxa-core:node ;
+	atxa-core:model <http://www.architexa.com/rdf/jdt-wkspc#redis.clients.jedis$Client.hincrBy(String,String,long,)> ;
+	atxa-jdt:index "0" .
+
+_:node17onlqd1bx2657 a atxa-core:link ;
+	atxa-core:model atxa-jdt:returns ;
+	rdf:subject _:node17onlqd1bx2651 ;
+	rdf:object _:node17onlqd1bx2650 ;
+	atxa-core:name "void" .
+

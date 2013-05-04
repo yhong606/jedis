@@ -279,7 +279,7 @@ public class TransactionCommandsTest extends JedisCommandTestBase {
     }
     
     @Test
-    public void select() {
+    public void select() {//不同DB的watch也管用
         jedis.select(1);
         jedis.set("foo", "bar");
         jedis.watch("foo");

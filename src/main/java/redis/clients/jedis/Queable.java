@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Queable {
-    private Queue<Response<?>> pipelinedResponses = new LinkedList<Response<?>>();
+    private Queue<Response<?>> pipelinedResponses = new LinkedList<Response<?>>();	//使用builder构建，封装了将来会返回填充的内容
 
     protected void clean() {
         pipelinedResponses.clear();

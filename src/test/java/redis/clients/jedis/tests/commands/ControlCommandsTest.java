@@ -58,6 +58,7 @@ public class ControlCommandsTest extends JedisCommandTestBase {
     public void info() {
         String info = jedis.info();
         assertNotNull(info);
+        System.out.println(info);
         info = jedis.info("server");
         assertNotNull(info);
     }
@@ -66,10 +67,10 @@ public class ControlCommandsTest extends JedisCommandTestBase {
     public void monitor() {
         new Thread(new Runnable() {
             public void run() {
-                Jedis j = new Jedis("localhost");
+                Jedis j = new Jedis("192.168.49.130");
                 j.auth("foobared");
                 for (int i = 0; i < 4; i++) {
-                    j.incr("foobared");
+                    j.incrBy("foobared",i);
                 }
                 try {
                     Thread.sleep(2500);
@@ -84,20 +85,24 @@ public class ControlCommandsTest extends JedisCommandTestBase {
             private int count = 0;
 
             public void onCommand(String command) {
-                if (command.contains("INCR")) {
-                    count++;
-                }
-                if (count == 5) {
-                    client.disconnect();
-                }
+            	System.out.println("调用命令:"+command);
+//                if (command.contains("INCR")) {
+//                    count++;
+//                }
+//                if (count == 5) {
+//                    client.disconnect();
+//                }
             }
         });
     }
 
     @Test
     public void configGet() {
-        List<String> info = jedis.configGet("m*");
-        assertNotNull(info);
+        List<String> infos = jedis.configGet("*");
+        for (String info : infos) {
+			System.out.println(info);
+		}
+        assertNotNull(infos);
     }
 
     @Test
@@ -119,7 +124,9 @@ public class ControlCommandsTest extends JedisCommandTestBase {
         jedis.set("foo", "bar");
         String resp = jedis.debug(DebugParams.OBJECT("foo"));
         assertNotNull(resp);
+        System.out.println(resp);
         resp = jedis.debug(DebugParams.RELOAD());
         assertNotNull(resp);
+        System.out.println(resp);
     }
 }
