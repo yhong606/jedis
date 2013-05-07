@@ -36,7 +36,7 @@ public interface BasicCommands {
 
     Long getDB();
 
-    String debug(DebugParams params);
+    String debug(DebugParams param);
 
     String configResetStat();
 }

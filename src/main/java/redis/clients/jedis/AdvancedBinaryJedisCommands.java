@@ -6,7 +6,6 @@ import java.util.List;
 public interface AdvancedBinaryJedisCommands {
 
     List<byte[]> configGet(byte[] pattern);
-
     byte[] configSet(byte[] parameter, byte[] value);
 
     String slowlogReset();
@@ -19,7 +18,7 @@ public interface AdvancedBinaryJedisCommands {
 
     Long objectRefcount(byte[] key);
 
-    byte[] objectEncoding(byte[] key);
+    byte[] objectEncoding(byte[] keys);
 
     Long objectIdletime(byte[] key);
 }
